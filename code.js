@@ -42,7 +42,7 @@ exports.handler = function(event, context) {
         Input: {
             Key: key
         },
-        PipelineId: '1479569182711-766cpt', /* test-web-transcoder */
+        PipelineId: process.env.pipelineId, /* test-web-transcoder */
         // OutputKeyPrefix: 'transecoded/',
         OutputKeyPrefix: 'transcodedvideos/',
         Outputs: [
